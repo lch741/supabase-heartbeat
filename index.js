@@ -26,7 +26,7 @@ async function pingSupabase() {
     console.log('🎯 Target table:', tableName);
 
     try {
-        const { data, error } = await supabase.from(tableName).select('id').limit(1);
+        const { data, error } = await supabase.from(tableName).select('Id').limit(1);
 
         if (error) {
             throw error;
